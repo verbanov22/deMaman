@@ -212,7 +212,7 @@ header nav ul a:hover{
         flex-wrap: wrap;
 
         background: #879e7d;
-        padding: 10px 8px;
+        padding: 10px 16px;
         gap: 10px;
     }
 
@@ -242,8 +242,12 @@ header nav ul a:hover{
         margin-top: 70px;
         margin-bottom: 1px;
     }
-    section .opacity-text{
-      opacity: 0;
+
+    #breakfast,
+    #lunch,
+    #drinks,
+    #desert{
+      scroll-margin-top: 160px;
     }
     
 }
