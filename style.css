@@ -120,8 +120,15 @@ header nav ul a:hover{
      content: url("img/img.logo.mobile.png");
      height: 70px;
      width: auto;
+     margin: 0 auto;
+  }
+
+  header .logo {
+    width: 100%;
+    text-align: center;
   }
 }
+
 
 .top-nav{
 	flex-shrink: 1; /* меню может уменьшаться */
@@ -133,7 +140,7 @@ header nav ul a:hover{
 	position: fixed;
 	top: 120px;
 	left: 16px;
-	width: 200px;
+	width: 180px;
 	background: #879e7d;
 	padding: 16px;
 	border-radius: 10px;
@@ -185,6 +192,62 @@ header nav ul a:hover{
     }
 }
 
+/* Скрыто на ПК */
+.mobile-categories {
+    display: none;
+}
+
+/* Мобильное фиксированное меню */
+@media (max-width: 900px) {
+    .mobile-categories {
+        position: fixed;
+        top: 105px;
+
+        left: 0;
+        width: 100%;
+        z-index: 999;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        background: #879e7d;
+        padding: 10px 8px;
+        gap: 10px;
+    }
+
+    .mobile-categories a {
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+
+        padding: 6px 10px;
+        border-radius: 6px;
+        background: rgba(255,255,255,0.18);
+
+        transition: 0.3s;
+        white-space: nowrap; /* не переносить строку */
+    }
+
+    .mobile-categories a:hover {
+        background: rgba(255,255,255,0.35);
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    #hero{
+        margin-top: 70px;
+        margin-bottom: 1px;
+    }
+    section .opacity-text{
+      opacity: 0;
+    }
+    
+}
+
 /*Информация по середине*/
 
 main {
@@ -196,8 +259,8 @@ main {
 /* Когда экран уже маленький, убираем отступ слева для main */
 @media (max-width: 1350px) {
     main {
-        margin-left: 20px; /* небольшой отступ от края страницы */
-        margin-right: 20px; /* чтобы красиво смотрелось на узких экранах */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -211,7 +274,6 @@ section{
 .banner{
 	position: relative;
 	width: 100%;
-	height: 320px;
 	border-radius: 12px;
 	overflow: hidden;
 	margin-bottom: 40px;
@@ -263,6 +325,10 @@ section{
 	font-size: 18px;
 	line-height: 1.4;
 }
+
+section .opacity-text{
+      opacity: 0;
+    }
 
 /* Скрываем текст баннера на маленьких экранах */
 @media (max-width: 1350px) {
