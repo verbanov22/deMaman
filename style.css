@@ -212,7 +212,7 @@ header nav ul a:hover{
         flex-wrap: wrap;
 
         background: #879e7d;
-        padding: 10px 8px 10px 3px;
+        padding: 10px 8px 10px 0px;
         gap: 10px;
     }
 
