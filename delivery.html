@@ -1,0 +1,126 @@
+––<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>De maman</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Шапка, лого и меню -->
+		<header>
+			<div class="logo">
+				<a href="index.html"
+					><img src="img/img.logo.png" alt="logo de Maman"
+				/></a>
+			</div>
+
+			<!-- Адаптивная кнопка для мобильный версии -->
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<nav class="top-nav">
+				<ul>
+					<li>
+						<a href="delivery.html">Условие доставки</a>
+					</li>
+					<li>
+						<a href="about.html">О нас</a>
+					</li>
+					<li>
+						<a href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="delivery-section">
+			<p class="delivery-intro">
+				Мы заботимся о том, чтобы ваша любимая еда из нашего кафе была
+				доставлена быстро, качественно и с максимальным комфортом.
+			</p>
+
+			<div class="delivery-info">
+				<p><strong>📍 Зона доставки:</strong> по городу и ближайшим районам</p>
+				<p><strong>⏰ Время доставки:</strong> ежедневно с 9:00 до 21:00</p>
+				<p>
+					<strong>💶 Стоимость доставки:</strong> бесплатно при заказе от 20 €
+				</p>
+				<p><strong>🚴‍♂️ Среднее время:</strong> от 30 до 60 минут</p>
+			</div>
+
+			<img
+				class="delivery-img"
+				src="img/delivery/img-delivery.png"
+				alt="Доставка еды"
+			/>
+		</section>
+
+		<!-- Футер -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="img/img.logo.footer.png" alt="De Maman" />
+				</div>
+
+				<div class="footer-menu">
+					<h3>Бързи връзки</h3>
+					<ul>
+						<li>
+							<a href="delivery.html">Условие доставки</a>
+						</li>
+						<li>
+							<a href="offers.html">Акции</a>
+						</li>
+						<li>
+							<a href="about.html">О нас</a>
+						</li>
+						<li>
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-social">
+					<h3>Мы в соцсетях</h3>
+					<div class="social-links">
+						<a href="https://www.instagram.com/demaman.bg/"
+							><img src="img/social/icon-instagram.png" alt="Instagram"
+						/></a>
+						<a href="#"
+							><img src="img/social/icon-facebook.png" alt="Facebook"
+						/></a>
+						<a href="#"
+							><img src="img/social/icon-whatsapp.png" alt="WhatsApp"
+						/></a>
+						<a href="#"
+							><img src="img/social/icon-telegram.png" alt="Telegram"
+						/></a>
+					</div>
+				</div>
+
+				<div class="footer-contacts">
+					<h3>Контакти</h3>
+					<p>Телефон: <a href="tel:+359899111293">+359 89 9111293</a></p>
+					<p>Email: <a href="mailto:info@demaman.bg">info@demaman.bg</a></p>
+					<p>Адрес: Свети Влас, ул. «Русалка» 8, 8256 Бургас</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; Кафе «De maman» - все права защищены</p>
+			</div>
+		</footer>
+		<script>
+			const burger = document.querySelector('.burger')
+			const menu = document.querySelector('header nav ul')
+
+			burger.addEventListener('click', () => {
+				menu.classList.toggle('active')
+			})
+		</script>
+	</body>
+</html>
